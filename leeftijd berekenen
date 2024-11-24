@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int year,birthyear,age;
+    year = 2024;
+    // ask the user to enter their birthyear 
+    cout << "enter your birthyear:" ;
+    cin >> birthyear;
+    // calculate the difference of current year and birthyear
+    age = year - birthyear;
+    cout << " you are " << age << " years old " << endl;
+    return 0;
+}

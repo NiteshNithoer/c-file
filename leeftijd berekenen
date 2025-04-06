@@ -2,12 +2,19 @@
 using namespace std;
 int main() {
     int year,birthyear,age;
-    year = 2024;
+    year = 2025;
     // ask the user to enter their birthyear 
     cout << "enter your birthyear:" ;
     cin >> birthyear;
     // calculate the difference of current year and birthyear
-    age = year - birthyear;
-    cout << " you are " << age << " years old " << endl;
+    
+    if(birthyear >= 1000){
+        age = year - birthyear;
+        cout << "you are " << age << " years old";
+    }else {
+        cout << "ERROR";
+    }
+        
+
     return 0;
 }
